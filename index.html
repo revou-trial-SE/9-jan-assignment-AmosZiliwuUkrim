@@ -304,85 +304,93 @@
     <section class="container section col-lg-6" id="shop">
       <form class="container pb-5 ps-4" id="order-form">
         <div class="row shadow-lg shadow-primary p-4 col-lg-12 col-12">
-        <legend>
-          <h2>Shop</h2>
-        <div class="mb-3 col-lg-8 col-8">
-          <label type="product-name" class="form-label"><h5>Nama Lengkap</h5></label>
-          <input type="text" id="product-name" class="form-control" placeholder="Nama Lengkap">
+          <legend>
+            <h2>Shop</h2>
+            <div class="mb-3 col-lg-8">
+              <label type="product-name" class="form-label">
+                <h5>Nama Lengkap</h5>
+              </label>
+              <input type="text" id="product-name" class="form-control" placeholder="Nama Lengkap Anda">
+            </div>
+            <div class="col-lg-4">
+              <label for="menu-select" class="form-label">
+                <h5>Menu dan Nama Produk</h5>
+              </label>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <label for="coffe" class="fs-6">Coffe</label>
+                <div for="black-coffee" class="fs-6">
+                  <input type="checkbox" id="black-coffee" name="selected-products" value="Black Coffee">
+                  Black Coffee
+                </div>
+                <div for="espresso" class="fs-6">
+                  <input type="checkbox" id="espresso" name="selected-products" value="Espresso">
+                  Espresso
+                </div>
+                <div for="latte" class="fs-6">
+                  <input type="checkbox" id="latte" name="selected-products" value="Latte/Es Latte">
+                  Latte/Es Latte
+                </div>
+                <div for="americano" class="fs-6">
+                  <input type="checkbox" id="americano" name="selected-products" value="Americano">
+                  Americano
+                </div>
+                <div for="cappuccino" class="fs-6">
+                  <input type="checkbox" id="cappuccino" name="selected-products" value="Cappuccino">
+                  Cappuccino
+                </div>
+                <div for="moka" class="fs-6">
+                  <input type="checkbox" id="moka" name="selected-products" value="Moka">
+                  Moka
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="ice-drink" class="fs-6">Ice Drink</label>
+                <div for="es-nona" class="fs-6">
+                  <input type="checkbox" id="es-nona" name="selected-products" value="Es Nona">
+                  Es Nona
+                </div>
+                <div for="es-oyen" class="fs-6">
+                  <input type="checkbox" id="es-oyen" name="selected-products" value="Es Oyen">
+                  Es Oyen
+                </div>
+                <div for="es-goyobod" class="fs-6">
+                  <input type="checkbox" id="es-goyobod" name="selected-products" value="Es Goyobod">
+                  Es Goyobod
+                </div>
+                <div for="es-dawet-ireng" class="fs-6">
+                  <input type="checkbox" id="es-dawet-ireng" name="selected-products" value="Es Dawet Ireng">
+                  Es Dawet Ireng
+                </div>
+                <div for="es-lontrong-slawi" class="fs-6">
+                  <input type="checkbox" id="es-lontrong-slawi" name="selected-products" value="Es Lontrong Slawi">
+                  Es Lontrong Slawi
+                </div>
+                <div for="es-matoa" class="fs-6">
+                  <input type="checkbox" id="es-matoa" name="selected-products" value="Es Matoa">
+                  Es Matoa
+                </div>
+              </div>
+            </div>
+            <div id="product-list" class="mb-3 col-lg-4"></div>
+            <div class="mb-3 col-lg-8">
+              <label for=" contact-info" class="form-label">
+                <h5>Informasi Kontak</h5>
+              </label>
+              <input type="text" id="contact-info" class="form-control" placeholder="No Telepon / Email">
+            </div>
+            <div class="mb-3 col-lg-8">
+              <label for=" address" class="form-label">
+                <h5>Alamat</h5>
+              </label>
+              <textarea id="address" class="form-control" placeholder="Alamat"></textarea>
+            </div>
+            <a type="button" href="https://wa.me/6282275625828"
+              class="btn bg-primary text-white p-2 ps-4 pe-4 ps-md-4 fw-bold">Beli</a>
+            <input class="btn btn-danger" type="reset" value="Reset">
+          </legend>
         </div>
-        <div class="col-lg-4">
-          <label for="menu-select" class="form-label"><h5>Menu dan Nama Produk</h5></label>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <label for="coffe" class="fs-6">Coffe</label>
-            <div for="black-coffee" class="fs-6">
-              <input type="checkbox" id="black-coffee" name="selected-products" value="Black Coffee">
-              Black Coffee
-            </div>
-            <div for="espresso" class="fs-6">
-              <input type="checkbox" id="espresso" name="selected-products" value="Espresso">
-              Espresso
-            </div>
-            <div for="latte" class="fs-6">
-              <input type="checkbox" id="latte" name="selected-products" value="Latte/Es Latte">
-              Latte/Es Latte
-            </div>
-            <div for="americano" class="fs-6">
-              <input type="checkbox" id="americano" name="selected-products" value="Americano">
-              Americano
-            </div>
-            <div for="cappuccino" class="fs-6">
-              <input type="checkbox" id="cappuccino" name="selected-products" value="Cappuccino">
-              Cappuccino
-            </div>
-            <div for="moka" class="fs-6">
-              <input type="checkbox" id="moka" name="selected-products" value="Moka">
-              Moka
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <label for="ice-drink" class="fs-6">Ice Drink</label>
-            <div for="es-nona" class="fs-6">
-              <input type="checkbox" id="es-nona" name="selected-products" value="Es Nona">
-              Es Nona
-            </div>
-            <div for="es-oyen" class="fs-6">
-              <input type="checkbox" id="es-oyen" name="selected-products" value="Es Oyen">
-              Es Oyen
-            </div>
-            <div for="es-goyobod" class="fs-6">
-              <input type="checkbox" id="es-goyobod" name="selected-products" value="Es Goyobod">
-              Es Goyobod
-            </div>
-            <div for="es-dawet-ireng" class="fs-6">
-              <input type="checkbox" id="es-dawet-ireng" name="selected-products" value="Es Dawet Ireng">
-              Es Dawet Ireng
-            </div>
-            <div for="es-lontrong-slawi" class="fs-6">
-              <input type="checkbox" id="es-lontrong-slawi" name="selected-products" value="Es Lontrong Slawi">
-              Es Lontrong Slawi
-            </div>
-            <div for="es-matoa" class="fs-6">
-              <input type="checkbox" id="es-matoa" name="selected-products" value="Es Matoa">
-              Es Matoa
-            </div>
-          </div>
-        </div>
-        <div id="product-list" class="mb-3 col-lg-4"></div>
-        <div class="mb-3 col-lg-8 col-8"">
-        <label for=" contact-info" class="form-label"><h5>Informasi Kontak</h5></label>
-          <input type="text" id="contact-info" class="form-control" placeholder="No Telepon / Email">
-        </div>
-        <div class="mb-3 col-lg-8 col-8"">
-        <label for=" address" class="form-label"><h5>Alamat</h5></label>
-          <textarea id="address" class="form-control" placeholder="Alamat"></textarea>
-        </div>
-        <a type="button" href="https://wa.me/6282275625828"
-          class="btn bg-primary text-white p-2 ps-4 pe-4 ps-md-4 fw-bold">Beli</a>
-        <input class="btn btn-danger" type="reset" value="Reset">
-      </legend>
-      </div>
       </form>
     </section>
 
