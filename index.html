@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGOPI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="shortcut icon" href="./images/iconlogo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section class="fixed-top">
+    <nav class="navbar navbar-expand-lg bg-info bg-gradient ps-4 pe-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" class="images" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#coffe">Coffee</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#ice-drink">Ice drink</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" action="/search" method="GET">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <marquee class="bg-primary-subtle p-1" onmouseover="this.stop()" onmouseout="this.start()">
+      <div>
+        <span class="p-5 ">Call me : <a href="tel:082275625828">082275625828</a> | Email :
+          <a href="mailto:amosaleksiatoziliwu@gmail.com"">amosaleksiatoziliwu@gmail.com</a
+      ></span
+    >
+    <span class=" p-5">Follow me on my social media</span>
+        <span class="p-5">Follow me :
+          <a href="https://www.facebook.com/zil.amosas"><span class="fab fa-facebook text-primary"></span></a>
+          <a href="https://instagram.com/amos_zil?igshid=OGQ5ZDc2ODk2ZA=="><span
+              class="fab fa-instagram text-danger"></span></a>
+          <a href="https://wa.me/6282275625828"><span class="fab fa-whatsapp text-success"></span></a>
+          <a href="https://www.linkedin.com/in/amos-aleksiato-ziliwu-028840293/"><span
+              class="fab fa-linkedin text-info"></span></a>
+        </span>
+      </div>
+    </marquee>
+  </section>
+  <!-- Home -->
+  <section class="section bg-secondary bg-opacity-25 section-limit" id="home">
+    <div class="container p-4">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 bg-secondary bg-opacity-25">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Black Coffee</h1>
+          <p class="lead font-size">Kopi hitam adalah minuman yang ikonik dengan cita rasa mendalam. Dipanggang
+            sempurna, kopi hitam menghadirkan kekayaan rasa khas. Dalam setiap tegukan, kopi hitam menggoda indera
+            dengan keasaman seimbang, tubuh berani, dan aroma memikat. Kelezatan kopi hitam tidak hanya memberikan
+            semangat dan kejelasan pikiran, tapi juga memuaskan bagi pecinta kopi sejati. Nikmati keajaiban kopi hitam
+            yang mengalir setiap tetes, membangkitkan kenikmatan tak terlupakan!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a type="button" href="#shop" class="btn bg-primary text-white p-2 ps-4 pe-4 fw-bold col-4 col-lg-3">Go
+              Buy</a>
+            <a type="button" href="#coffe" class="btn btn-outline-secondary btn-lg px-4 col-4 col-lg-3">Lainnya</a>
+          </div>
+        </div>
+        <div class="col-lg-4  offset-lg-1 pb-5 pe-lg-5 overflow-hidden">
+          <marquee scrollamount="8" direction="right"><img src="./images/coffe/produk1.jpg" alt="produk1"></marquee>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coffe -->
+    <section id="coffe" class="section">
+      <div class="container p-4 shadow-lg shadow-primary col-lg-12 col-12">
+        <h2 class="fw-bold ps-4 pb-4">Coffe</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coffe/produk1.jpg" class="card-img-top" alt="produk 1">
+              <div class="card-body">
+                <h5 class="card-title">Black Coffee</h5>
+                <p class="card-text text-truncate">Kopi hitam adalah minuman yang ikonik dengan cita rasa mendalam.
+                  Dipanggang sempurna, kopi hitam menghadirkan kekayaan rasa khas. Dalam setiap tegukan, kopi hitam
+                  menggoda indera dengan keasaman seimbang, tubuh berani, dan aroma memikat. Kelezatan kopi hitam tidak
+                  hanya memberikan semangat dan kejelasan pikiran, tapi juga memuaskan bagi pecinta kopi sejati. Nikmati
+                  keajaiban kopi hitam yang mengalir setiap tetes, membangkitkan kenikmatan tak terlupakan!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coffe/produk2.jpg" class="card-img-top" alt="produk 2">
+              <div class="card-body">
+                <h5 class="card-title">Espresso</h5>
+                <p class="card-text text-truncate">Rasakan kenikmatan kopi yang intens dengan Espresso kami! Nikmati
+                  kekayaan rasa yang pekat dan krima yang lembut dalam setiap tegukan. Dibuat dengan hati-hati
+                  menggunakan mesin espresso terbaik, Espresso kami memberikan pengalaman kopi yang tak tertandingi.
+                  Dapatkan dorongan energi yang Anda butuhkan dengan konsentrasi kafein yang tinggi dalam setiap
+                  cangkir. Segera rasakan keajaiban Espresso kami dan jadilah bagian dari para pecinta kopi yang sejati!
+                </p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coffe/produk3.jpg" class="card-img-top" alt="produk 3">
+              <div class="card-body">
+                <h5 class="card-title">Latte/Es Latte</h5>
+                <p class="card-text text-truncate">Nikmati keharmonisan cita rasa dengan Latte / Es Latte kami! Rasakan
+                  kelembutan susu yang melimpah dan kekuatan espresso yang khas dalam setiap tegukan. Dengan sentuhan
+                  krima yang lembut di atasnya, Latte / Es Latte kami menghadirkan pengalaman kopi yang sempurna.
+                  Tersedia dalam versi panas atau dingin, minuman ini cocok untuk dinikmati kapan saja dan di mana saja.
+                  Dapatkan kehangatan dan kesegaran yang Anda butuhkan dalam setiap sloki. Jadi, jadilah bagian dari
+                  para pecinta kopi yang mencintai keharmonisan rasa dalam setiap tegukan dengan Latte / Es Latte kami!
+                </p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coffe/produk4.jpg" class="card-img-top" alt="produk 4">
+              <div class="card-body">
+                <h5 class="card-title">Americano</h5>
+                <p class="card-text text-truncate">Bangkitkan semangat Anda dengan Americano kami yang menggugah!
+                  Rasakan kekuatan kopi yang sejati dengan setiap tegukan. Dibuat dengan biji kopi pilihan dan ekstraksi
+                  espresso yang sempurna, Americano kami menyajikan rasa kopi yang khas dengan keasaman yang seimbang.
+                  Nikmati kelezatan kopi hitam yang otentik dan tetap terjaga dengan konsentrasi kafein yang tinggi.
+                  Dapatkan pengalaman kopi yang mendalam dan penuh karakter dengan Americano kami. Segera merasakan
+                  keajaiban rasa dengan Americano, dan nikmati kopi yang memberikan semangat sejati!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coffe/produk5.jpg" class="card-img-top" alt="produk 5">
+              <div class="card-body">
+                <h5 class="card-title">Cappucino</h5>
+                <p class="card-text text-truncate">Nikmati keharmonisan rasa dengan Cappuccino kami yang luar biasa!
+                  Rasakan perpaduan sempurna antara espresso yang kuat, susu yang lembut, dan taburan bubuk kakao di
+                  atasnya. Cappuccino kami memberikan pengalaman kopi yang memanjakan lidah Anda. Setiap sloki
+                  menghadirkan rasa kopi yang kaya dan tekstur yang lembut. Dapatkan kombinasi yang sempurna antara
+                  kekuatan dan kelembutan dalam setiap tegukan. Segera rasakan kenikmatan yang tak tergoyahkan dengan
+                  Cappuccino kami. Bergabunglah dalam perjalanan rasa yang menggugah dengan para pecinta kopi sejati dan
+                  nikmati Cappuccino yang menggoda indera!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coffe/produk6.jpg" class="card-img-top" alt="produk 6">
+              <div class="card-body">
+                <h5 class="card-title">Moka</h5>
+                <p class="card-text text-truncate">Mari rasakan pesona klasik Moka kami yang memikat! Hadir dengan cita
+                  rasa yang kaya dan aroma yang memikat, Moka kami menghadirkan pengalaman kopi yang autentik. Dibuat
+                  dengan menggunakan alat tradisional Moka pot, setiap tegukan Moka kami menghadirkan kelembutan dan
+                  kekayaan rasa yang tak tertandingi. Nikmati keharuman kopi yang melimpah dan kenikmatan dari setiap
+                  sloki. Segera jadilah bagian dari para pecinta kopi yang mencintai kesederhanaan dan keaslian dengan
+                  Moka kami. Rasakan keajaiban klasik dalam setiap cangkir Moka yang kami sajikan!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ice Drink -->
+    <section id="ice-drink" class="section">
+      <div class="container p-4 shadow-lg shadow-primary col-lg-12 col-12">
+        <h2 class="fw-bold ps-4 pb-4">Ice drink</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/ice-drink/produk1.jpg" class="card-img-top" alt="produk 1">
+              <div class="card-body">
+                <h5 class="card-title">Es Nona</h5>
+                <p class="card-text text-truncate">Rasakan kelembutan dan kesegaran dengan Es Nona kami yang memikat!
+                  Nikmati sensasi dingin yang memanjakan lidah Anda dalam setiap tegukan. Es Nona kami adalah
+                  kombinasi sempurna antara es krim lezat, sirup rasa pilihan, dan taburan topping yang menggoda.
+                  Setiap sloki menghadirkan kelezatan yang tak terlupakan dan membawa Anda ke dalam dunia rasa yang
+                  menggugah. Segera bergabunglah dengan para pecinta Es Nona dan nikmati pengalaman es krim yang
+                  mengesankan. Jangan lewatkan kesempatan untuk merasakan keajaiban Es Nona yang akan memanjakan
+                  selera Anda!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/ice-drink/produk2.jpg" class="card-img-top" alt="produk 2">
+              <div class="card-body">
+                <h5 class="card-title">Es Oyen</h5>
+                <p class="card-text text-truncate">Rasakan sensasi segar yang luar biasa dengan Es Oyen kami yang unik!
+                  Dibuat dengan hati-hati menggunakan bahan-bahan berkualitas terbaik, Es Oyen kami menghadirkan
+                  kombinasi yang sempurna antara es serut lembut, sirup rasa pilihan, dan taburan topping yang menggugah
+                  selera. Setiap suapan menghadirkan ledakan rasa yang memikat dan menggoyang lidah Anda. Nikmati
+                  kesegaran yang menyegarkan di setiap gigitan dan biarkan Es Oyen kami menjadi teman setia Anda di
+                  tengah cuaca yang panas. Jadilah bagian dari komunitas pecinta Es Oyen yang sejati dan rasakan sensasi
+                  yang tak terlupakan!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/ice-drink/produk3.jpg" class="card-img-top" alt="produk 3">
+              <div class="card-body">
+                <h5 class="card-title">Es Goyobod</h5>
+                <p class="card-text text-truncate">Jelajahi kelezatan eksotis dengan Es Goyobod kami yang memikat!
+                  Dibuat dengan sentuhan rahasia dari kota Goyobod, Es Goyobod kami menghadirkan pengalaman rasa yang
+                  luar biasa. Rasakan kombinasi sempurna antara es serut yang lembut, sirup gula merah yang manis,
+                  potongan nangka yang lembut, dan taburan kelapa parut yang gurih. Setiap suapan membawa Anda ke dalam
+                  dunia cita rasa yang menggugah selera. Nikmati sensasi segar dan eksotis yang memanjakan lidah Anda,
+                  seolah-olah Anda berada di tengah-tengah kota Goyobod itu sendiri. Bergabunglah dengan para pecinta Es
+                  Goyobod dan rasakan kenikmatan yang tak terlupakan dengan setiap gigitan!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/ice-drink/produk4.jpg" class="card-img-top" alt="produk 4">
+              <div class="card-body">
+                <h5 class="card-title">Es dawet Ireng</h5>
+                <p class="card-text text-truncate">Mari merasakan kenikmatan khas Jawa dengan Es Dawet Ireng kami yang
+                  menggugah selera! Nikmati sensasi menyegarkan dengan setiap tegukan. Es Dawet Ireng kami terbuat dari
+                  bahan-bahan berkualitas tinggi, seperti dawet hitam lembut, santan kental, sirup gula merah yang khas,
+                  dan es serut yang segar. Setiap suapan menghadirkan kelezatan yang memikat dengan kombinasi unik dari
+                  rasa manis, gurih, dan segar. Jadilah bagian dari komunitas pecinta Es Dawet Ireng yang sejati dan
+                  nikmati pengalaman es tradisional yang tak terlupakan. Segera rasakan keajaiban rasa dengan Es Dawet
+                  Ireng kami yang istimewa!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/ice-drink/produk5.jpg" class="card-img-top" alt="produk 5">
+              <div class="card-body">
+                <h5 class="card-title">Es Lontrong Slawi</h5>
+                <p class="card-text text-truncate">Mari rasakan kelezatan khas Slawi dengan Es Lontrong kami yang
+                  memikat! Dibuat dengan penuh kecermatan menggunakan resep warisan Slawi, Es Lontrong kami menghadirkan
+                  sensasi yang tak terlupakan. Nikmati kesegaran dari potongan buah-buahan segar yang melimpah, sirup
+                  rasa khas Slawi yang manis, dan es serut yang lembut. Setiap suapan menghadirkan kombinasi harmonis
+                  antara rasa manis, segar, dan gurih yang memanjakan lidah Anda. Segera bergabunglah dengan para
+                  pecinta Es Lontrong Slawi dan rasakan kelezatan yang autentik. Jadikan Es Lontrong Slawi sebagai teman
+                  setia Anda dalam menikmati kelezatan khas Slawi yang tak terlupakan!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/ice-drink/produk6.jpg" class="card-img-top" alt="produk 6">
+              <div class="card-body">
+                <h5 class="card-title">Es Matoa</h5>
+                <p class="card-text text-truncate">Nikmati kelezatan eksotis dengan Es Matoa kami yang memikat! Terbuat
+                  dari buah Matoa segar yang dipadukan dengan keahlian dan cinta, Es Matoa kami menghadirkan rasa yang
+                  tak terlupakan. Rasakan kombinasi sempurna antara manisnya buah Matoa, kelembutan es serut, dan sirup
+                  segar yang memikat selera. Setiap suapan membawa Anda ke dalam dunia rasa yang eksotis dan memanjakan
+                  lidah Anda dengan sensasi yang tak tertandingi. Bergabunglah dengan komunitas pecinta Es Matoa dan
+                  nikmati pengalaman es yang menggugah selera. Jangan lewatkan kesempatan untuk merasakan keajaiban Es
+                  Matoa yang akan memenuhi dahaga kelezatan Anda!</p>
+                <a href="#" class="btn btn-primary">Go buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="section" id="shop">
+      <form class="container shadow-lg shadow-primary p-4 col-lg-6 col-12" id="order-form">
+        <legend>
+          <h2>Shop</h2>
+        </legend>
+        <div class="mb-3 col-lg-8 col-8">
+          <label type="product-name" class="form-label"><b>Nama Lengkap</b></label>
+          <input type="text" id="product-name" class="form-control" placeholder="Nama Lengkap">
+        </div>
+        <div class="col-lg-4">
+          <label for="menu-select" class="form-label"><b>Menu dan Nama Produk</b></label>
+        </div>
+        <label for="coffe">Coffe
+          <div for="black-coffee">
+            <input type="checkbox" id="black-coffee" name="selected-products" value="Black Coffee">
+            Black Coffee
+          </div>
+          <div for="espresso">
+            <input type="checkbox" id="espresso" name="selected-products" value="Espresso">
+            Espresso
+          </div>
+          <div for="latte">
+            <input type="checkbox" id="latte" name="selected-products" value="Latte/Es Latte">
+            Latte/Es Latte
+          </div>
+          <div for="americano">
+            <input type="checkbox" id="americano" name="selected-products" value="Americano">
+            Americano
+          </div>
+          <div for="cappuccino">
+            <input type="checkbox" id="cappuccino" name="selected-products" value="Cappuccino">
+            Cappuccino
+          </div>
+          <div for="moka">
+            <input type="checkbox" id="moka" name="selected-products" value="Moka">
+            Moka
+          </div>
+        </label>
+        <br>
+        <hr class="col-lg-8 col-8">
+        <label for="ice-drink">Ice Drink
+          <div for="es-nona">
+            <input type="checkbox" id="es-nona" name="selected-products" value="Es Nona">
+            Es Nona
+          </div>
+          <div for="es-oyen">
+            <input type="checkbox" id="es-oyen" name="selected-products" value="Es Oyen">
+            Es Oyen
+          </div>
+          <div for="es-goyobod">
+            <input type="checkbox" id="es-goyobod" name="selected-products" value="Es Goyobod">
+            Es Goyobod
+          </div>
+          <div for="es-dawet-ireng">
+            <input type="checkbox" id="es-dawet-ireng" name="selected-products" value="Es Dawet Ireng">
+            Es Dawet Ireng
+          </div>
+          <div for="es-lontrong-slawi">
+            <input type="checkbox" id="es-lontrong-slawi" name="selected-products" value="Es Lontrong Slawi">
+            Es Lontrong Slawi
+          </div>
+          <div for="es-matoa">
+            <input type="checkbox" id="es-matoa" name="selected-products" value="Es Matoa">
+            Es Matoa
+          </div>
+        </label>
+        <br>
+        <div id="product-list" class="mb-3 col-lg-4"></div>
+        <div class="mb-3 col-lg-8 col-8"">
+        <label for=" contact-info" class="form-label"><b>Informasi Kontak</b></label>
+          <input type="text" id="contact-info" class="form-control" placeholder="No Telepon / Email">
+        </div>
+        <div class="mb-3 col-lg-8 col-8"">
+        <label for=" address" class="form-label"><b>Alamat</b></label>
+          <textarea id="address" class="form-control" placeholder="Alamat"></textarea>
+        </div>
+        <a type="button" href="https://wa.me/6282275625828"
+          class="btn bg-primary text-white p-2 ps-4 pe-4 ps-md-4 fw-bold">Go Buy</a>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <article id="contact" class="section">
+      <div class="container pb-5 ps-4">
+        <div class="row shadow-lg shadow-primary p-4 col-lg-12 col-12">
+          <h2 class="pb-4">Contact</h2>
+          <div class="col-md-6">
+            <div class="info">
+              <div class="contact-info">
+                <div class="d-flex">
+                  <div class="icon">
+                    <i><img src="./images/location.png" alt="Location" width="50"></i>
+                  </div>
+                  <div class="text ps-2">
+                    <h4>Location:</h4>
+                    <p>
+                      Jl. Kenanga I, Juwangen, Purwomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta
+                      55571
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="icon">
+                    <i><img src="./images/email.png" alt="Email" width="50"></i>
+                  </div>
+                  <div class="text ps-2">
+                    <h4>Email:</h4>
+                    <p>amosaleksiatoziliwu@gmail.com</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="icon">
+                    <i><img src="./images/phone.png" alt="Phone" width="50"></i>
+                  </div>
+                  <div class="text ps-2">
+                    <h4>Call:</h4>
+                    <p>+62 82275625828</p>
+                  </div>
+                </div>
+              </div>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.137023260627!2d110.44709187485736!3d-7.775291977135897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5a14b4042083%3A0x80f7c7f5fcc55b76!2sUniversitas%20Kristen%20Imanuel!5e0!3m2!1sen!2sid!4v1695391931854!5m2!1sen!2sid"
+                  frameborder="0" style="border: 0; width: 100%; height: 290px" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <H4>Contact me</H4>
+            <div class="info contact-form">
+              <form action="https://formsubmit.co/amosaleksiatoziliwu@gmail.com" method="post" class="php-email-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="whatsapp">No WhatsApp</label>
+                  <input type="number" class="form-control" name="whatsapp" id="whatsapp" required />
+                </div>
+                <div class="form-group">
+                  <label class="col-12" for="message">Message</label>
+                  <textarea class="col-8" placeholder="Your Message..." name="message" rows="5" required></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer class="p-3">&copy; Amos Aleksiato Ziliwu</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
