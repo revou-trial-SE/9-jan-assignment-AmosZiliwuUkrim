@@ -74,7 +74,7 @@
   </section>
   <!-- Home -->
   <section class="section bg-secondary bg-opacity-25 section-limit" id="home">
-    <div class="container p-4">
+    <div class="container ps-3 pe-3 p-lg-4">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 bg-secondary bg-opacity-25">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Black Coffee</h1>
@@ -307,74 +307,75 @@
         <legend>
           <h2>Shop</h2>
         <div class="mb-3 col-lg-8 col-8">
-          <label type="product-name" class="form-label"><b>Nama Lengkap</b></label>
+          <label type="product-name" class="form-label"><h5>Nama Lengkap</h5></label>
           <input type="text" id="product-name" class="form-control" placeholder="Nama Lengkap">
         </div>
         <div class="col-lg-4">
-          <label for="menu-select" class="form-label"><b>Menu dan Nama Produk</b></label>
+          <label for="menu-select" class="form-label"><h5>Menu dan Nama Produk</h5></label>
         </div>
-        <label for="coffe">Coffe
-          <div for="black-coffee">
-            <input type="checkbox" id="black-coffee" name="selected-products" value="Black Coffee">
-            Black Coffee
+        <div class="row">
+          <div class="col-lg-6">
+            <label for="coffe" class="fs-6">Coffe</label>
+            <div for="black-coffee" class="fs-6">
+              <input type="checkbox" id="black-coffee" name="selected-products" value="Black Coffee">
+              Black Coffee
+            </div>
+            <div for="espresso" class="fs-6">
+              <input type="checkbox" id="espresso" name="selected-products" value="Espresso">
+              Espresso
+            </div>
+            <div for="latte" class="fs-6">
+              <input type="checkbox" id="latte" name="selected-products" value="Latte/Es Latte">
+              Latte/Es Latte
+            </div>
+            <div for="americano" class="fs-6">
+              <input type="checkbox" id="americano" name="selected-products" value="Americano">
+              Americano
+            </div>
+            <div for="cappuccino" class="fs-6">
+              <input type="checkbox" id="cappuccino" name="selected-products" value="Cappuccino">
+              Cappuccino
+            </div>
+            <div for="moka" class="fs-6">
+              <input type="checkbox" id="moka" name="selected-products" value="Moka">
+              Moka
+            </div>
           </div>
-          <div for="espresso">
-            <input type="checkbox" id="espresso" name="selected-products" value="Espresso">
-            Espresso
+          <div class="col-lg-6">
+            <label for="ice-drink" class="fs-6">Ice Drink</label>
+            <div for="es-nona" class="fs-6">
+              <input type="checkbox" id="es-nona" name="selected-products" value="Es Nona">
+              Es Nona
+            </div>
+            <div for="es-oyen" class="fs-6">
+              <input type="checkbox" id="es-oyen" name="selected-products" value="Es Oyen">
+              Es Oyen
+            </div>
+            <div for="es-goyobod" class="fs-6">
+              <input type="checkbox" id="es-goyobod" name="selected-products" value="Es Goyobod">
+              Es Goyobod
+            </div>
+            <div for="es-dawet-ireng" class="fs-6">
+              <input type="checkbox" id="es-dawet-ireng" name="selected-products" value="Es Dawet Ireng">
+              Es Dawet Ireng
+            </div>
+            <div for="es-lontrong-slawi" class="fs-6">
+              <input type="checkbox" id="es-lontrong-slawi" name="selected-products" value="Es Lontrong Slawi">
+              Es Lontrong Slawi
+            </div>
+            <div for="es-matoa" class="fs-6">
+              <input type="checkbox" id="es-matoa" name="selected-products" value="Es Matoa">
+              Es Matoa
+            </div>
           </div>
-          <div for="latte">
-            <input type="checkbox" id="latte" name="selected-products" value="Latte/Es Latte">
-            Latte/Es Latte
-          </div>
-          <div for="americano">
-            <input type="checkbox" id="americano" name="selected-products" value="Americano">
-            Americano
-          </div>
-          <div for="cappuccino">
-            <input type="checkbox" id="cappuccino" name="selected-products" value="Cappuccino">
-            Cappuccino
-          </div>
-          <div for="moka">
-            <input type="checkbox" id="moka" name="selected-products" value="Moka">
-            Moka
-          </div>
-        </label>
-        <br>
-        <hr class="col-lg-8 col-8">
-        <label for="ice-drink">Ice Drink
-          <div for="es-nona">
-            <input type="checkbox" id="es-nona" name="selected-products" value="Es Nona">
-            Es Nona
-          </div>
-          <div for="es-oyen">
-            <input type="checkbox" id="es-oyen" name="selected-products" value="Es Oyen">
-            Es Oyen
-          </div>
-          <div for="es-goyobod">
-            <input type="checkbox" id="es-goyobod" name="selected-products" value="Es Goyobod">
-            Es Goyobod
-          </div>
-          <div for="es-dawet-ireng">
-            <input type="checkbox" id="es-dawet-ireng" name="selected-products" value="Es Dawet Ireng">
-            Es Dawet Ireng
-          </div>
-          <div for="es-lontrong-slawi">
-            <input type="checkbox" id="es-lontrong-slawi" name="selected-products" value="Es Lontrong Slawi">
-            Es Lontrong Slawi
-          </div>
-          <div for="es-matoa">
-            <input type="checkbox" id="es-matoa" name="selected-products" value="Es Matoa">
-            Es Matoa
-          </div>
-        </label>
-        <br>
+        </div>
         <div id="product-list" class="mb-3 col-lg-4"></div>
         <div class="mb-3 col-lg-8 col-8"">
-        <label for=" contact-info" class="form-label"><b>Informasi Kontak</b></label>
+        <label for=" contact-info" class="form-label"><h5>Informasi Kontak</h5></label>
           <input type="text" id="contact-info" class="form-control" placeholder="No Telepon / Email">
         </div>
         <div class="mb-3 col-lg-8 col-8"">
-        <label for=" address" class="form-label"><b>Alamat</b></label>
+        <label for=" address" class="form-label"><h5>Alamat</h5></label>
           <textarea id="address" class="form-control" placeholder="Alamat"></textarea>
         </div>
         <a type="button" href="https://wa.me/6282275625828"
